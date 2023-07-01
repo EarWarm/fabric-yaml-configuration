@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-yaml-configuration",
+  "version": "${version}",
+  "name": "fabric-yaml-configuration",
+  "description": "Mod for create configurations with yaml",
+  "authors": [
+    "EarWarm"
+  ],
+  "contact": {
+    "website": "vk.com/mountcode",
+    "repo": "https://github.com/EarWarm/fabric-yaml-configuration"
+  },
+  "license": "unlicense",
+  "icon": "assets/fabric-yaml-configuration/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.mountcode.mods.fabricyamlconfiguration.client.FabricYamlConfigurationClient"
+    ],
+    "main": [
+      "ru.mountcode.mods.fabricyamlconfiguration.FabricYamlConfiguration"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
